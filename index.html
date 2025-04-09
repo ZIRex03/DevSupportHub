@@ -37,44 +37,59 @@
             <!-- Панель бокового меню -->
             <div class="sidebar-container">
 
-                <div id="sidebar" class="sidebar active">
+                <div id="sidebar" class="sidebar">
 
                     <div data-tab="main-tab" id="main" class="title-box">
-                        <p id="main-title" class="tab-button title active">Главная</p>
+                        <div class="menu-box">
+                            <img src="./icons/home-active.png" alt="" class="menu-box-icon active">
+                            <p id="main-title" class="tab-button title active">Главная</p>
+                        </div>
+                        
                     </div>
 
                     <div data-tab="errors-tab" id="errors" class="title-box">
-                        <p id="errors-title" class="tab-button title">Возможные неисправности</p>
+                        <div class="menu-box">
+                            <img src="./icons/malfunction.png" alt="" class="menu-box-icon">
+                            <p id="errors-title" class="tab-button title">Возможные неисправности</p>
+                        </div>
+                        
                     </div>
 
                     <div data-tab="reglaments-tab" id="reglaments" class="title-box">
-                        <p id="reglaments-title" class="tab-button title">Регламентные работы</p>
-                        <img id="reglaments-arrow" src="./icons/arrow-down.png" alt="" class="arrow-down">
+
+                        <div class="menu-box">
+                            <img src="./icons/regulations.png" alt="" class="menu-box-icon">
+                            <p id="reglaments-title" class="tab-button title">Регламентные работы</p>
+                        </div>
+                        
+                        <!-- <img id="reglaments-arrow" src="./icons/arrow-down.png" alt="" class="arrow-down"> -->
                     </div>
 
-                    <div id="reglaments-subtitle" class="subtitle-box">
+                    <!-- <div id="reglaments-subtitle" class="subtitle-box">
                         <p class="subtitle" data-target="task-assigment">Назначение задач команде</p>
                         <p class="subtitle" data-target="progress-tracking">Отслеживание прогресса выполнения задач</p>
                         <p class="subtitle" data-target="report-generation">Генерация отчетов о статусе проекта</p>
                         <p class="subtitle" data-target="project-creation">Создание новых проектов</p>
-                    </div>
+                    </div> -->
 
                     <div data-tab="info-tab" id="info" class="title-box">
-                        <p id="info-title" class="tab-button title">Справочная информация</p>
-                        <img src="./icons/arrow-down.png" alt="" id="info-arrow" class="arrow-down">
+                        <div class="menu-box">
+                            <img src="./icons/info.png" alt="" class="menu-box-icon">
+                            <p id="info-title" class="tab-button title">Справочная информация</p>
+                        </div>
+                        
+                        <!-- <img src="./icons/arrow-down.png" alt="" id="info-arrow" class="arrow-down"> -->
                     </div>
 
-                    <div id="info-subtitle" class="subtitle-box">
+                    <!-- <div id="info-subtitle" class="subtitle-box">
                         <p class="subtitle" data-target="system-description">Описание системы управления проектами</p>
                         <p class="subtitle" data-target="faq">Часто задаваемые вопросы (FAQ)</p>
                         <p class="subtitle" data-target="contacts">Контактная информация для поддержки</p>
-                    </div>
+                    </div> -->
 
                 </div>
 
-                <div onclick="sidebarOpen()" class="sidebar-button">
-                    <p id="sidebar-arrow" class="sidebar-arrow active">></p>
-                </div>
+                
             </div>
             <!--  -->
 
@@ -211,9 +226,12 @@
                             </div>
 
                             <div class="chat" id="chat">
+                                <!-- <div class="final-message">
+                                    <p>Данный диалог завершен</p>
+                                </div> -->
                             </div>
 
-                            <div class="chat-box-buttons">
+                            <div id="chat-buttons" class="chat-box-buttons">
 
                                 <div class="chat-box-buttons-handle">
                                     <button onclick="handleAnswer('no')" class="button-handle no">Нет</button>
