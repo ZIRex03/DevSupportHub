@@ -515,6 +515,7 @@ function addMessage(text, sender) {
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 
+
 function handleAnswer(answer) {
     if (!currentNode.answers || !currentNode.answers[answer]) return;
 

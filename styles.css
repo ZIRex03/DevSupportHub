@@ -745,6 +745,12 @@ main {
   width: 35px;
 }
 
+.instructions-image{
+  align-self: center;
+  max-height: 300px;
+  width: auto;
+}
+
 /* Адаптивность для мобильных */
 @media (max-width: 768px) {
   .reglament-table {
